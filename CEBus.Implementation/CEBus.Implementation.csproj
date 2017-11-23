@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>Ivo Valchev</Authors>
+    <Company>Ivo Valchev</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Implementation for CEBus</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\Release\netcoreapp2.0\CEBus.Implementation.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CEBus.Abstract" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
