@@ -29,7 +29,7 @@ namespace CEBus.Implementation
         /// <param name="event"></param>
         public void Publish<TEvent>(TEvent @event) where TEvent : IEvent
         {
-            if (@event != null)
+            if (@event == null)
             {
                 throw new ArgumentNullException(nameof(@event));
             }

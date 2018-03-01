@@ -6,7 +6,7 @@
     <Company>Ivo Valchev</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Implementation for CEBus</Description>
-    <Version>1.0.1</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
