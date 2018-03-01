@@ -31,6 +31,10 @@ namespace CEBus.Implementation
         /// <param name="command"></param>
         public void Execute<TCommand>(TCommand command) where TCommand : ICommand
         {
+            if (command != null)
+            {
+                throw new ArgumentNullException(nameof(command));
+            }
             var handler = (ICommandHandler<TCommand>)resolver.GetService(typeof(ICommandHandler<TCommand>));        
             handler?.Handle(command);
         }

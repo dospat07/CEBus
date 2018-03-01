@@ -29,6 +29,10 @@ namespace CEBus.Implementation
         /// <param name="event"></param>
         public void Publish<TEvent>(TEvent @event) where TEvent : IEvent
         {
+            if (@event != null)
+            {
+                throw new ArgumentNullException(nameof(@event));
+            }
             var handlers = resolver.GetServices(typeof(IEventHandler<TEvent>));
             foreach (var handler in handlers)
             {

@@ -6,6 +6,7 @@
     <Company>Ivo Valchev</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Implementation for CEBus</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -15,6 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="CEBus.Abstract" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
